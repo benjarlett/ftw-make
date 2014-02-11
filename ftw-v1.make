@@ -22,35 +22,8 @@ core = 7.x
 ; drush make uses API version `2`.
 
 api = 2
-
-; Core project
-; ------------
-; In order for your makefile to generate a full Drupal site, you must include
-; a core project. This is usually Drupal core, but you can also specify
-; alternative core projects like Pressflow. Note that makefiles included with
-; install profiles *should not* include a core project.
-
-; Use pressflow instead of Drupal core:
-; projects[pressflow][type] = "core"
-; projects[pressflow][download][type] = "file"
-; projects[pressflow][download][url] = "http://launchpad.net/pressflow/6.x/6.15.73/+download/pressflow-6.15.73.tar.gz"
-
-; CVS checkout of Drupal 6.x core:
-; projects[drupal][type] = "core"
-; projects[drupal][download][type] = "cvs"
-; projects[drupal][download][root] = ":pserver:anonymous:anonymous@cvs.drupal.org:/cvs/drupal"
-; projects[drupal][download][revision] = "DRUPAL-6"
-; projects[drupal][download][module] = "drupal"
-
-; CVS checkout of Drupal 7.x. Requires the `core` property to be set to 7.x.
-; projects[drupal][type] = "core"
-; projects[drupal][download][type] = "cvs"
-; projects[drupal][download][root] = ":pserver:anonymous:anonymous@cvs.drupal.org:/cvs/drupal"
-; projects[drupal][download][revision] = "HEAD"
-; projects[drupal][download][module] = "drupal"
-
-projects[] = drupal
-
+projects[drupal][version] = 7.26
+projects[drupal][patch][] = "https://drupal.org/files/issues/drupal7.entity-system.1525176-153.patch"
 ; Projects
 ; --------
 ; Each project that you would like to include in the makefile should be
@@ -137,8 +110,8 @@ projects[superfish][version] = 1.x-dev
 
 projects[content_access] = 1.2-beta2
 ;projects[field_permissions] = 1.0-beta2
-projects[bootstrap] = 3.0
-projects[views_bootstrap] = 2.0
+;projects[bootstrap] = 3.0
+;projects[views_bootstrap] = 2.0
 
 libraries[tinymce][download][type] = get
 libraries[tinymce][download][url] = http://download.moxiecode.com/tinymce/tinymce_3.5.10.zip
