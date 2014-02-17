@@ -50,7 +50,6 @@ projects[] = backup_migrate
 projects[] = auto_nodetitle
 projects[] = metatag
 projects[] = oauth
-projects[] = nodeformsettings
 projects[] = disablepwstrength
 projects[] = email_registration
 projects[] = formblock
@@ -125,11 +124,11 @@ libraries[easing][download][url] = https://github.com/gdsmith/jquery.easing/blob
 libraries[theworkshop_videoplayer][download][type] = get
 libraries[theworkshop_videoplayer][download][url] = http://www.theworkshop.co.uk/wp-content/themes/wstheme/downloads/videoplayerdownload.zip
 
-libraries[bootstrap][download][type] = "get"
-libraries[bootstrap][download][url] = "https://github.com/twbs/bootstrap/archive/v3.0.2.zip"
-libraries[bootstrap][directory_name] = "bootstrap"
-libraries[bootstrap][destination] = "themes/bootstrap"
-libraries[bootstrap][overwrite] = TRUE
+;libraries[bootstrap][download][type] = "get"
+;libraries[bootstrap][download][url] = "https://github.com/twbs/bootstrap/archive/v3.0.2.zip"
+;libraries[bootstrap][directory_name] = "bootstrap"
+;libraries[bootstrap][destination] = "themes/bootstrap"
+;libraries[bootstrap][overwrite] = TRUE
 
 ; Or an alternative, extended syntax:
 
