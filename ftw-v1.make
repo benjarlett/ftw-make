@@ -90,6 +90,8 @@ projects[] = adaptivetheme
 projects[] = feeds
 projects[] = features
 projects[] = features_extra
+projects[] = uuid
+projects[] = uuid_features
 projects[] = job_scheduler
 projects[] = mailsystem
 projects[] = references
@@ -98,6 +100,9 @@ projects[] = fontello
 projects[] = icon
 projects[] = redirect
 projects[] = views_bulk_operations
+projects[] = special_menu_items
+projects[] = twitter_block
+projects[] = views_rss
 projects[superfish][version] = 1.x-dev
 
 ; This will, by default, retrieve the latest recommended version of the project
