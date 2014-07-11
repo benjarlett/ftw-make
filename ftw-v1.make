@@ -102,7 +102,10 @@ projects[] = redirect
 projects[] = views_bulk_operations
 projects[] = special_menu_items
 projects[] = twitter_block
-projects[] = views_rss
+projects[] = media
+projects[] = media_vimeo
+projects[] = file_entity
+projects[] = field_permissions
 projects[superfish][version] = 1.x-dev
 
 ; This will, by default, retrieve the latest recommended version of the project
